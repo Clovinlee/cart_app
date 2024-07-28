@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\v1\FormController;
 use App\Http\Controllers\Api\v1\MailController;
 use App\Http\Controllers\Api\v1\ProductController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\WebsocketController;
 use App\Http\Middleware\TestMiddleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -40,4 +41,7 @@ Route::group(['prefix' => 'v1', 'namespace' => 'Api\Http\Controllers\Api\v1'], f
     // composer require predis/predis
     // composer require elasticsearch/elasticsearch
     Route::get("/search", [ProductController::class, "search"]);
+
+    // ROUTE FOR WEBSOCKET API
+    Route::post("/notify", [WebsocketController::class, "notify"]);
 });

@@ -28,7 +28,9 @@ class AppLayout extends Component
             "Home" => "/",
             "Shop" => "/shop",
             "Cart" => "/cart",
-            "Form" => "/form"
+            "Form" => "/form",
+            "Websocket" => "/websocket",
+            "Websocket-listen" => "/websocket-listen",
         ];
     }
 

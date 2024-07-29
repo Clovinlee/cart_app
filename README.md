@@ -23,4 +23,5 @@ This repository serves as my public documentation that I created to learn more i
 - Cache (& Redis)
 - AppServiceProvider (DI)
 - Component & Layouting (FE)
+- Broadcast & Channel
 
